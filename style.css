@@ -1,5 +1,4 @@
 body {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: Roboto, sans-serif;
@@ -10,7 +9,8 @@ body {
     flex-direction: column;
     background-color: #1f2937;
     color: #f9faf8;
-    flex: 1;
+    flex: 0 0 400px;
+
 }
 
 .header {
@@ -80,13 +80,12 @@ ul {
     color: #e5e7eb;
     background-color: #6D747D;
     margin: 10px;
-    /* padding: 50px; */
     flex: 1 1 0;
 }
 
 .sign-up-button {
     max-width: 100px;
-    padding: 5px;
+    padding: 8px;
     border-radius: 6px;
     background-color: #3882f6;
     color: #f9faf8;
@@ -94,13 +93,13 @@ ul {
 }
 
 .section-two {
-    flex: 1;
-    height: 350px;
+    flex: 0 0 450px;
 }
 
 .random {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .random-text {
@@ -127,6 +126,7 @@ ul {
     align-items: center;
     flex: 0 0 150px;
     margin: 20px;
+    gap: 8px;
     
 }
 
@@ -134,65 +134,101 @@ ul {
     border-width: 4px;
     border-style: solid;
     border-color: #3882f6;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 12px;
     border-width: 10x;
 
 }
 
+.image-text {
+    text-align: center;
+    margin: 0;
+}
+
 .section-three {
     background-color: #e5e7eb;
-    flex: 1;
+    flex: 0 0 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .quote-block {
     display: flex;
-    flex: 0 0 75vw;
+    flex: 0 1 800px ;
     flex-direction: column;
-
+    margin: 100px 15%;
 }
 
 .quote-text{
     flex: 1;
     font-size: 36px;
+    justify-content: center;
+    align-items: center;
     font-style: italic;
+    font-weight: 100;
     color: #1f2937;
-    margin: 0 15%;
+    margin: 0;
+    padding: 0
 }
 
 .quote-author {
     flex: 1;
     align-self: flex-end;
-    margin: 0 15%;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 22px;
 }
 
 .section-four {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    flex: 0 0 320px;
 }
 
 .action-box {
     background-color: #3882f6;
     color: #f9faf8;
     display: flex;
-    flex: 0 0 75vw;
-    max-height: 150px;
+    width: 75vw;
+    height: 150px;
     margin: 50px;
+    border-radius: 8px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .action-left {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    flex: 3 1 0;
+    /* flex: 1; */
+    gap: 4px;
+}
+
+.action-line-one {
+    font-weight: 700;
+    font-size: 22px;
+    margin:0
+}
+
+.action-line-two {
+    font-size: 18px;
+    margin:0;
+    font-weight: 100;
 }
 
 .action-right {
-    flex: 1 1 0;
-    margin: 50px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-width: 2px;
+    border-color: #f9faf8;
+    border-radius: 5px;
+    border-style: solid;
+    font-size: 14px;
+    font-weight: 700;
+    width: 120px;
+    height: 40px;
 }
 
 
